@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,107 @@
     <title>Legal Solution</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b08442d712.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
+                    },
+                    // fontFamily: {
+                    //     'garamond': ['EB Garamond', serif],
+                    //     'poppins': ['Poppins', sans - serif],
+
+                    // }
                 }
             }
         }
     </script>
+    <style>
+        .garamond{
+            font-family: 'EB Garamond', serif;
+        }
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+        .my-btn {
+            border-radius: 8px;
+            background: #B68C5A;
+            padding: 1rem 2rem;
+            border: none;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-
+    <!-- header starts here -->
+    <header class="max-w-screen-xl mx-auto mt-8 mb-28">
+        <!-- navbar -->
+        <nav class="mb-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-[#707070] dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <img src="./images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#707070]">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn my-btn">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner starts here -->
+        <section>
+            <div class="hero min-h-[calc(100vh-92px)]"
+                style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-xl">
+                        <h1 class="mb-5 text-2xl md:text-5xl garamond font-extrabold">We Provide Effective <br> Legal Solutions</h1>
+                        <p class="mb-5 poppins text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div>
+                            <input type="search" name="" id="" placeholder="Search your Services" class="md:w-52 lg:w-96 md:h-12 rounded-lg pl-4">
+                            <button class="btn my-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main starts here -->
+    <main class="max-w-screen-xl mx-auto mt-8 mb-28">
+        <!--  -->
+    </main>
 </body>
 
 </html>
